@@ -12,10 +12,12 @@ int	main(void)
 	Erwann.beRepaired(3);
 	Erwann.takeDamage(15);
 	Erwann.attack("Yazid");
+	std::cout << std::endl;
 	
 	ScavTrap	Yazid("Yazid");
 	Yazid.attack("Erwann");
 	Yazid.guardGate();
+	std::cout << std::endl;
 
 	FragTrap	Theo("Theo");
 	Theo.highFivesGuys();
