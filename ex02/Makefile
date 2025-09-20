@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: yabokhar <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: yabokhar <yabokhar@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/09 15:37:00 by yabokhar          #+#    #+#              #
-#    Updated: 2025/09/11 13:48:14 by yabokhar         ###   ########.fr        #
+#    Updated: 2025/09/20 23:30:31 by yabokhar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,12 +31,6 @@ ${OBJECTS_DIR}%.o : %.cpp Makefile | ${DEPENDS_DIR} ${OBJECTS_DIR}
 ${NAME}: ${OBJECTS} ${OBJECTS_DIR} ${DEPENDS_DIR} ${HEADERS}
 	@${CXX} ${CXX_FLAGS} ${OBJECTS} -o ${NAME}
 	@echo "${NAME} has been successfully generated."
-
-test:
-	g++ .BSP_tester.cpp -o .BSP_tester `pkg-config --cflags --libs sdl2` 
-
-cleantest:
-	rm .BSP_tester
 
 ${OBJECTS_DIR} ${DEPENDS_DIR}:
 	@echo "Creating .objects and .deps folder..."
