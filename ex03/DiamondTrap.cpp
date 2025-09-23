@@ -32,9 +32,7 @@ DiamondTrap& DiamondTrap::operator=(const DiamondTrap& other)
 {
 	if (this != &other)
 	{
-		std::cout << "here\n" << _energyPoints << std::endl;
 		ClapTrap::operator=(other);
-		std::cout << "poof\n" << _energyPoints << std::endl;
 		_name = other._name;
     }
     std::cout << "DiamondTrap " << _name << " assigned!" << std::endl;
