@@ -32,15 +32,13 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& other)
  		_energyPoints = other._energyPoints;
  		_attackDamage = other._attackDamage;
     }
-	std::cout << "ClapTrap " + _name + " assigned " + "to " + old_name << std::endl;
+	std::cout << "ClapTrap " + old_name + " assigned " + "to " + _name << std::endl;
 	return (*this);
 }
 
 ClapTrap::~ClapTrap()
 
 {
-	if (_name.empty())
-		_name = "<empty_name>";
 	std::cout << "ClapTrap " + _name + " destructed!" << std::endl;
 }
 
