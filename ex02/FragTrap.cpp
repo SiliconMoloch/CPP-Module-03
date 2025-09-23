@@ -1,5 +1,14 @@
 #include "FragTrap.hpp"
 
+FragTrap::FragTrap(void) : ClapTrap("<empty_name>")
+
+{
+	_hitPoints = 100;
+	_energyPoints = 100;
+	_attackDamage = 30;
+	std::cout << "FragTrap " << _name << " constructed by default!" << std::endl;
+}
+
 FragTrap::FragTrap(const std::string& name) : ClapTrap(name)
 
 {
@@ -12,13 +21,18 @@ FragTrap::FragTrap(const std::string& name) : ClapTrap(name)
 FragTrap::FragTrap(const FragTrap& other) : ClapTrap(other)
 
 {
+	_hitPoints = other._hitPoints;
+	_energyPoints = other._energyPoints;
+	_attackDamage = other._attackDamage;
 	std::cout << "FragTrap " << _name << " copy constructed!" << std::endl;
 }
 
 FragTrap& FragTrap::operator=(const FragTrap& other)
+
 {
+	const std::string	old_name = _name;
     ClapTrap::operator=(other);
-    std::cout << "FragTrap " << _name << " assigned!" << std::endl;
+    std::cout << "FragTrap " << old_name << " assigned to " << _name << std::endl;
     return (*this);
 }
 
