@@ -21,9 +21,9 @@ ScavTrap::ScavTrap(const std::string& name) : ClapTrap(name)
 ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other) 
 
 {
-	_hitPoints = 100;
-	_energyPoints = 50;
-	_attackDamage = 20;
+	_hitPoints = other._hitPoints;
+	_energyPoints = other._energyPoints;
+	_attackDamage = other._attackDamage;
 	std::cout << "ScavTrap " << _name << " copy constructed!" << std::endl;
 }
 
@@ -33,7 +33,7 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& other)
 	const std::string	old_name = _name;
 
 	ClapTrap::operator=(other);
-	std::cout << "ScavTrap " << _name << " assigned to " << old_name << std::endl;
+	std::cout << "ScavTrap " << old_name << " assigned to " << _name << std::endl;
 	return (*this);
 }
 
