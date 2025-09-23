@@ -6,7 +6,7 @@
 #    By: yabokhar <yabokhar@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/09 15:37:00 by yabokhar          #+#    #+#              #
-#    Updated: 2025/09/20 23:30:17 by yabokhar         ###   ########.fr        #
+#    Updated: 2025/09/23 15:35:05 by yabokhar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ OBJECTS_DIR = .objects/
 DEPENDS_DIR	= .deps/
 OBJECTS     = ${SOURCES:%.cpp=${OBJECTS_DIR}%.o}
 DEPS		= ${SOURCES:%.cpp=${DEPENDS_DIR}%.d}
-NAME		= Aaaaand..._OPEN!
+NAME		= Aaaaand_OPEN
 CXX         = c++
 CXX_FLAGS   = -Wall -Wextra -Werror -std=c++98
 DEPFLAGS	= -MT $@ -MMD -MP -MF $(DEPENDS_DIR)$*.d
