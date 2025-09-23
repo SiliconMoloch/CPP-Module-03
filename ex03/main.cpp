@@ -12,9 +12,5 @@ int	main(void)
 	Erwazheo.guardGate();
 	Erwazheo.highFivesGuys();
 
-	DiamondTrap ffs("FEUR");
-
-	ffs.takeDamage(1);
-
 	return (0);
 }

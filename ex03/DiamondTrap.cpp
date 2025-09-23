@@ -44,7 +44,6 @@ DiamondTrap& DiamondTrap::operator=(const DiamondTrap& other)
 DiamondTrap::~DiamondTrap() 
 
 {
-	std::cout << _name + " :" <<  _hitPoints << std::endl;
 	std::cout << "DiamondTrap " << _name << " destructed!" << std::endl;
 }
 
