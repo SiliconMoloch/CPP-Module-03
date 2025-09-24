@@ -6,7 +6,7 @@
 #    By: yabokhar <yabokhar@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/09 15:37:00 by yabokhar          #+#    #+#              #
-#    Updated: 2025/09/23 18:16:42 by yabokhar         ###   ########.fr        #
+#    Updated: 2025/09/24 16:47:46 by yabokhar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ OBJECTS     = ${SOURCES:%.cpp=${OBJECTS_DIR}%.o}
 DEPS		= ${SOURCES:%.cpp=${DEPENDS_DIR}%.d}
 NAME		= Now_its_weird
 CXX         = c++
-CXX_FLAGS   = -Wall -Wextra -Werror -std=c++98 -Wshadow
+CXX_FLAGS   = -Wall -Wextra -Werror -std=c++98
 DEPFLAGS	= -MT $@ -MMD -MP -MF $(DEPENDS_DIR)$*.d
 
 all: ${NAME}
